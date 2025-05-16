@@ -1,0 +1,253 @@
+/* Custom CSS Variables */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+}
+
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+}
+
+/* Card Styles */
+.card {
+    border: none;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-body {
+    border-radius: 10px;
+}
+
+/* Button Styles */
+.btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-1px);
+}
+
+/* Form Styles */
+.form-control {
+    border-radius: 5px;
+    padding: 10px 15px;
+    border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Alert Styles */
+.alert {
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Map Container */
+#map {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Timer Styles */
+.timer {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    z-index: 1000;
+}
+
+/* Status Badge Styles */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.status-pending {
+    background-color: var(--warning-color);
+    color: #000;
+}
+
+.status-active {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.status-resolved {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .card-body {
+        padding: 1.5rem;
+    }
+
+    #map {
+        height: 300px;
+    }
+
+    .card-img-top {
+        height: 150px;
+    }
+}
+
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 2rem;
+}
+
+/* Report list styles */
+.list-group-item {
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+}
+
+.list-group-item:hover {
+    transform: translateY(-2px);
+}
+
+.badge {
+    font-size: 0.9rem;
+    padding: 8px 12px;
+}
+
+/* Dashboard card styles */
+.dashboard-card {
+    background: linear-gradient(135deg, #0d6efd 0%, #0099ff 100%);
+    color: white;
+    padding: 1.5rem;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.dashboard-card h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+.dashboard-card .number {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+/* Timer modal styles */
+.modal-content {
+    border: none;
+    border-radius: 10px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 5px;
+}
+
+/* Loading spinner */
+.spinner-border {
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 0.2rem;
+}
+
+/* Image preview */
+.image-preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Status badges */
+.badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000;
+}
+
+.badge.bg-info {
+    background-color: #0dcaf0 !important;
+}
+
+.badge.bg-primary {
+    background-color: #0d6efd !important;
+}
+
+.badge.bg-success {
+    background-color: #198754 !important;
+}
+
+.badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
